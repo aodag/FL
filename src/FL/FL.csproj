@@ -91,12 +91,21 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Modules\FileList\View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Modules\Hello\View.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modules\FileList\FileListModule.cs" />
+    <Compile Include="Modules\FileList\View.xaml.cs">
+      <DependentUpon>View.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\FileList\ViewModel.cs" />
     <Compile Include="Modules\Hello\HelloModule.cs" />
     <Compile Include="Modules\Hello\View.xaml.cs">
       <DependentUpon>View.xaml</DependentUpon>

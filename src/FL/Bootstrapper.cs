@@ -28,7 +28,8 @@ namespace FL
         {
             base.ConfigureModuleCatalog();
             var m = (ModuleCatalog)this.ModuleCatalog;
-            m.AddModule(typeof(Modules.Hello.HelloModule));
+            //m.AddModule(typeof(Modules.Hello.HelloModule));
+            m.AddModule(typeof(Modules.FileList.FileListModule));
         }
     }
 }
